@@ -1,0 +1,27 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="Flask" />
+          <option value="Flask-Cors" />
+          <option value="PyMySQL" />
+          <option value="bytedbytegraph-gremlin" />
+          <option value="scikit-learn" />
+          <option value="numpy" />
+          <option value="bytedance.context" />
+          <option value="openai" />
+          <option value="pytesseract" />
+          <option value="bytedredis" />
+          <option value="python-Levenshtein" />
+          <option value="opencv-python" />
+          <option value="pillow" />
+          <option value="kubernetes" />
+          <option value="logging" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
