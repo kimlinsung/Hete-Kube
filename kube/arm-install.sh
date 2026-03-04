@@ -37,7 +37,18 @@ sudo systemctl stop dphys-swapfile
 sudo systemctl disable dphys-swapfile
 sudo swapoff -a
 
+# 禁用 zram 初始化服务（核心）
+sudo systemctl disable --now systemd-zram-setup@zram0.service
 
+# 屏蔽服务（防止被其他进程自动拉起）
+sudo systemctl mask systemd-zram-setup@zram0.service
+
+# 若存在 zram 回写服务，同样禁用（树莓派部分版本有）
+sudo systemctl disable --now rpi-zram-writeback.service
+sudo systemctl mask rpi-zram-writeback.service
+
+# 重载 systemd 配置使修改生效
+sudo systemctl daemon-reload
 
 
 
